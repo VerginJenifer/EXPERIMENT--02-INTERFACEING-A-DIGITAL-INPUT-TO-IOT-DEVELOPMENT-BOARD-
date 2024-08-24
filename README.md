@@ -1,8 +1,7 @@
-###  DATE: 
-
-###  NAME: 
-###  ROLL NO :
-###  DEPARTMENT: 
+###  DATE: 24.08.2024
+###  NAME: D VERGIN JENIFER
+###  ROLL NO : 21222324017
+###  DEPARTMENT: Btech AIML
 
 
 # EXPERIMENT--02-INTERFACING-A-DIGITAL-INPUT-TO-IOT-DEVELOPMENT-BOARD-
@@ -77,13 +76,28 @@ The full form of an ARM is an advanced reduced instruction set computer (RISC) m
 
 
 ## STM 32 CUBE PROGRAM :
-
+~~~
+  while (1)
+    {
+      if(IRstatus==1){
+      	HAL_GPIO_WritePin(GPIO, GPIO_PIN_0, GPIO_PIN_RESET);
+      	HAL_Delay(1000);
+      	
+      	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_0, GPIO_PIN_SET);
+      	HAL_Delay(1000);
+      }
+      else{
+      	HaL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);
+      	HAL_Delay(1000);
+      }
+    }
+  /* USER CODE END 3 */
+}
+~~~
 
 
 ## Output  :
- 
- 
- 
+ ![image](https://github.com/user-attachments/assets/4ef0b737-f5db-47f3-a4fc-a71be527bc8a)
  
 ## Result :
 Interfacing a digital Input (ir pair) with ARM microcontroller based IOT development is executed and the results are verified.
